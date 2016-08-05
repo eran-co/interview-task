@@ -1,3 +1,21 @@
 {
-  "twst": "test"
+  "vouchers": [{
+    "brandImageUrl": "amazon.png",
+    "brandName": "amazon",
+    "serialNumber": 1234567890098765,
+    "cvv": 34567,
+    "faceValue": 50,
+    "askingPrice": 45,
+    "discount": 5,
+    "seller": "john doe",
+    "created": 1470398117,
+    "id": "gjggjhhd",
+    "notes": "",
+    "currency": "GBP",
+    "isPaperVoucher": false,
+    "bulkId": "gjhgjgjjgjgjg",
+    "invoiceNumber": "57657757575",
+    "orderNumber": 6576575744,
+    "status": "Active"
+  }]
 }

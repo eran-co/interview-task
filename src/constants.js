@@ -1,0 +1,1 @@
+export const LOAD_VOUCHERS = 'LOAD_VOUCHERS';
