@@ -16,6 +16,7 @@ class VouchersListComponent extends React.Component {
                     id={voucher.id}
                     brandName={voucher.brandName}
                     faceValue={voucher.faceValue}
+                    brandImageUrl={voucher.brandImageUrl}
                     askingPrice={voucher.askingPrice}
                     discount={voucher.discount}
                     currency={voucher.currency}

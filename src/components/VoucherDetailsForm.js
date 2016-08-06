@@ -45,6 +45,7 @@ class VoucherDetailsForm extends React.Component  {
                     <label htmlFor="cvv">CVV</label><input type="number" name="cvv"
                                                            id="cvv"
                                                            value={cvv}
+                                                           readOnly={!isPaperVoucher}
                                                             onChange={bindedUpdateProperty}/>
                 </div>
                 <div className="form-field">

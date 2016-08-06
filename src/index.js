@@ -9,7 +9,6 @@ import { Provider } from 'react-redux';
 import { Router, Route, browserHistory } from 'react-router';
 import VouchersList from "./containers/VouchersList";
 import VoucherDetails from "./containers/VoucherDetails";
-import './media/amazon.png';
 
 let store = createStore(vouchersReducer);
 
