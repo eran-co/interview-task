@@ -1,0 +1,66 @@
+.vouchers-list-wrapper .header-wrapper {
+    height: 38px;
+    padding: 0 40px;
+    background-color: #2aaee8;
+}
+
+
+
+.vouchers-list-wrapper .header-wrapper .header-title {
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    line-height: 38px;
+}
+
+.vouchers-list-wrapper .voucher-list-row {
+    min-height: 80px;
+    padding: 0 30px;
+}
+
+.vouchers-list-wrapper .voucher-list-row:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.vouchers-list-wrapper .voucher-list-row .voucher-info {
+    width: 300px;
+    display: inline-block;
+    padding-top: 20px;
+}
+
+.vouchers-list-wrapper .voucher-list-row .voucher-info .brand-image {
+    height: 40px;
+    width: 40px;
+    border: 1px solid lightgray;
+    float: left;
+}
+
+.vouchers-list-wrapper .voucher-list-row .voucher-info .voucher-info-details {
+    float: left;
+    margin-left: 10px;
+}
+
+.vouchers-list-wrapper .voucher-list-row .discount {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.vouchers-list-wrapper .voucher-list-row .expanded-info {
+    height: 80px;
+}
+
+.vouchers-list-wrapper .voucher-list-row .expanded-info .extra-info {
+    display: inline-block;
+}
+
+.vouchers-list-wrapper .voucher-list-row .expanded-info .notes-field {
+    float: right;
+    width: 253px;
+    height: 70px;
+
+}
+
+.vouchers-list-wrapper .voucher-list-row .button-container {
+    float: right;
+    margin-top: 15px;
+}
