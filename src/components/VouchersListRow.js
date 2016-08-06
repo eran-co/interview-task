@@ -27,7 +27,7 @@ function VouchersListRow({ id, brandName, serialNumber, cvv, currency, created, 
     return (
         <div className='voucher-list-row' onClick={expandVoucher.bind(this, id)}>
             <VoucherInfo brandName={brandName} serialNumber={serialNumber} cvv={cvv} brandImageUrl='/src/media/amazon.jpg'/>
-            <EditButton />
+            <EditButton id={id} />
             <Spacer width="80px" />
             <Currency amount={faceValue} currency={currency}/>
             <Spacer width="63px" />
