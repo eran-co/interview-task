@@ -12,11 +12,11 @@ function updateNotes(id, updateVoucherProperty, event) {
     updateVoucherProperty(id, 'notes', event.currentTarget.value);
 }
 
-function VouchersListRow({ id, brandName, serialNumber, cvv, currency, created, discount, faceValue, askingPrice, seller, isExpanded, notes, expandVoucher, updateVoucherProperty}) {
+function VouchersListRow({ id, brandName, brandImageUrl, serialNumber, cvv, currency, created, discount, faceValue, askingPrice, seller, isExpanded, notes, expandVoucher, updateVoucherProperty}) {
     const date = moment(new Date(created * 1000)).format('DD/MM/YYYY, H:mm'); // August 6th 2016, 12:50:27 pm);
     return (
         <div className='voucher-list-row' onClick={expandVoucher.bind(this, id)}>
-            <VoucherInfo brandName={brandName} serialNumber={serialNumber} cvv={cvv} brandImageUrl='/src/media/amazon.jpg'/>
+            <VoucherInfo brandName={brandName} serialNumber={serialNumber} cvv={cvv} brandImageUrl={brandImageUrl}/>
             <EditButton id={id} />
             <Spacer width="80px" />
             <Currency amount={faceValue} currency={currency}/>
