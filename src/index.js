@@ -5,10 +5,11 @@ import { fetchVouchers } from './utils/api';
 import { vouchersReducer } from './reducers';
 import { loadVouchers } from './actions';
 import { createStore } from 'redux';
-import { Provider } from 'react-redux'
-import { Router, Route, browserHistory } from 'react-router'
-import VouchersList from "./containers/VouchersList"
-import VoucherDetails from "./containers/VoucherDetails"
+import { Provider } from 'react-redux';
+import { Router, Route, browserHistory } from 'react-router';
+import VouchersList from "./containers/VouchersList";
+import VoucherDetails from "./containers/VoucherDetails";
+import './media/amazon.png';
 
 let store = createStore(vouchersReducer);
 

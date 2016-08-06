@@ -1,0 +1,24 @@
+.voucher-details-container {
+    padding: 20px 30px 10px 20px;
+}
+
+.voucher-details-container .button-container{
+    float: right;
+}
+
+.voucher-details-container .voucher-details-form {
+    float: left;
+}
+
+.voucher-details-container .voucher-details-form .form-field{
+    height: 35px;
+}
+
+.voucher-details-container .voucher-details-form .form-field input[type=text]{
+    width: 150px;
+}
+
+.voucher-details-container .voucher-details-form label{
+    width: 150px;
+    display: inline-block;
+}

@@ -4,18 +4,8 @@ import VoucherInfo from './VoucherInfo';
 import EditButton from './EditButton';
 import Spacer from './Spacer';
 import Currency from './Currency';
-import Button from './Button';
+import StatusButtons from '../components/StatusButtons';
 import LabelWithCopy from './LabelWithCopy';
-
-function approve(id, updateVoucherProperty, event) {
-    event.stopPropagation();
-    updateVoucherProperty(id, 'status', 'Active');
-}
-
-function decline(id, updateVoucherProperty, event) {
-    event.stopPropagation();
-    updateVoucherProperty(id, 'status', 'Decline');
-}
 
 function updateNotes(id, updateVoucherProperty, event) {
     event.stopPropagation();
@@ -34,10 +24,7 @@ function VouchersListRow({ id, brandName, serialNumber, cvv, currency, created, 
             <Currency amount={askingPrice} currency={currency} discount={discount}/>
             <Spacer width="113px" />
             <span className="cell-value">{seller}</span>
-            <div className="button-container">
-                <Button color="blue" title="approve" onClick={approve.bind(this, id, updateVoucherProperty)}></Button>
-                <Button color="red" title="decline" onClick={decline.bind(this, id, updateVoucherProperty)}></Button>
-            </div>
+            <StatusButtons id={id} updateVoucherProperty={updateVoucherProperty} />
             {isExpanded ?
                 <div className="expanded-info">
                     <div className="extra-info">
